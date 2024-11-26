@@ -2,7 +2,10 @@
 	"required": true,
 	"package": "q4niel.hunger_fix.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [],
+	"mixins": [
+		"HungerManagerMixin",
+		"PlayerEntityMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	}
