@@ -1,7 +1,7 @@
 # Hunger Fix
 **What the hunger bar should've been**
 
-## Key Features
+## Features
 - **Passive Hunger Drain:** The player now has passive exhaustion, hunger will drain over time, not based on your actions.
 - **New Food Item Max Counts:**
   - **Apple:** 16
