@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "hunger-fix",
+	"version": "${version}",
+	"name": "Hunger Fix",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"q4niel"
+	],
+	"contact": {
+		"sources": "https://github.com/q4niel/Hunger-Fix"
+	},
+	"license": "The Insight License I",
+	"icon": "assets/hunger-fix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"q4niel.hunger_fix.HungerFix"
+		],
+		"fabric-datagen": [
+			"q4niel.hunger_fix.HungerFixDataGenerator"
+		]
+	},
+	"mixins": [
+		"hunger-fix.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
