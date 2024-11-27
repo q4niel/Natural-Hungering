@@ -3,7 +3,7 @@
 	"id": "hunger-fix",
 	"version": "${version}",
 	"name": "Hunger Fix",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "What the hunger bar should've been",
 	"authors": [
 		"q4niel"
 	],
