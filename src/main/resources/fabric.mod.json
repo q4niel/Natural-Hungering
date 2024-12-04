@@ -7,10 +7,15 @@
 	"authors": [
 		"q4niel"
 	],
+	"contributors": [
+		"Max Westerlund - Art Assets"
+	],
 	"contact": {
+		"homepage": "https://modrinth.com/mod/hunger-fix",
+		"issues": "https://github.com/q4niel/Hunger-Fix/issues",
 		"sources": "https://github.com/q4niel/Hunger-Fix"
 	},
-	"license": "The Insight License I",
+	"license": "The Insight License II",
 	"icon": "assets/hunger-fix/icon.png",
 	"environment": "*",
 	"entrypoints": {

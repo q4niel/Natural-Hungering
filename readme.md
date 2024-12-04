@@ -29,5 +29,8 @@
   - **Cookie:** 16
   - **Pumpkin Pie:** 1
 
+## **Credits**
+- **Art Assets** created by **Max Westerlund**.
+
 ## Feedback
 Found a bug or got some suggestions, head over to [GitHub Issues](https://github.com/q4niel/Hunger-Fix/issues).
