@@ -14,6 +14,6 @@ public class HungerManagerMixin {
             at = @At("HEAD")
     )
     void update(PlayerEntity player, CallbackInfo ci) {
-        ((HungerManager)(Object)this).addExhaustion(0.001f);
+        ((HungerManager)(Object)this).addExhaustion(0.003f);
     }
 }
