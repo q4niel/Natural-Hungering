@@ -14,7 +14,7 @@ public class HungerManagerMixin {
     @Shadow private float exhaustion;
 
     @Inject (
-            method = "update(Lnet/minecraft/server/network/ServerPlayerEntity;)V",
+            method = "update(Lnet/minecraft/entity/player/PlayerEntity;)V",
             at = @At("HEAD")
     )
     void update(CallbackInfo ci) {
