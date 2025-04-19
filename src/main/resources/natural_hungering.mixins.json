@@ -1,10 +1,9 @@
 {
 	"required": true,
-	"package": "q4niel.hunger_fix.mixin",
+	"package": "dev.q4niel.natural_hungering.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"HungerManagerMixin",
-		"PlayerEntityMixin"
+		"HungerManagerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

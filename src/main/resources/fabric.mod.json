@@ -1,39 +1,42 @@
 {
 	"schemaVersion": 1,
-	"id": "hunger-fix",
+	"id": "natural_hungering",
 	"version": "${version}",
-	"name": "Hunger Fix",
-	"description": "What the hunger bar should've been",
+	"name": "Natural-Hungering",
+	"description": "A Minecraft Fabric Mod: What the hunger bar should've been",
 	"authors": [
 		"q4niel"
 	],
-	"contributors": [
-		"Max Westerlund - Art Assets"
-	],
 	"contact": {
-		"homepage": "https://modrinth.com/mod/hunger-fix",
-		"issues": "https://github.com/q4niel/Hunger-Fix/issues",
-		"sources": "https://github.com/q4niel/Hunger-Fix"
+		"homepage": "https://modrinth.com/mod/natural-hungering",
+		"sources": "https://github.com/q4niel/Natural-Hungering"
 	},
-	"license": "The Insight License II",
-	"icon": "assets/hunger-fix/icon.png",
+	"license": "Natural Hungering License 1.0",
+	"icon": "assets/natural_hungering/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"q4niel.hunger_fix.HungerFix"
+			{
+				"value": "dev.q4niel.natural_hungering.NaturalHungering",
+				"adapter": "kotlin"
+			}
 		],
 		"fabric-datagen": [
-			"q4niel.hunger_fix.HungerFixDataGenerator"
+			{
+				"value": "dev.q4niel.natural_hungering.NaturalHungeringDataGenerator",
+				"adapter": "kotlin"
+			}
 		]
 	},
 	"mixins": [
-		"hunger-fix.mixins.json"
+		"natural_hungering.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.9",
-		"minecraft": "~1.21",
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
