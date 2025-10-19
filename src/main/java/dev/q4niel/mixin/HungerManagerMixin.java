@@ -1,6 +1,6 @@
 package dev.q4niel.mixin;
 
-import dev.q4niel.NaturalHungering;
+import dev.q4niel.ModConfig;
 import net.minecraft.entity.player.HungerManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -18,7 +18,7 @@ public class HungerManagerMixin {
             at = @At("HEAD")
     )
     void update(CallbackInfo ci) {
-        self.addExhaustion(NaturalHungering.INSTANCE.getPassiveExhaustion_());
+        self.addExhaustion((float)ModConfig.INSTANCE.get().getPassiveExhaustion());
     }
 
     @Inject (
@@ -26,6 +26,6 @@ public class HungerManagerMixin {
             at = @At("HEAD")
     )
     void addExhaustion(float exhaustion, CallbackInfo ci) {
-        this.exhaustion = (this.exhaustion + (exhaustion / NaturalHungering.INSTANCE.getExhaustionDivider_()));
+        this.exhaustion = (this.exhaustion + (exhaustion / (float)ModConfig.INSTANCE.get().getExhaustionDivider()));
     }
 }

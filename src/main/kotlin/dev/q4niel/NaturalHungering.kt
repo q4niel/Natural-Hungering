@@ -1,6 +1,7 @@
 package dev.q4niel
 
 import net.fabricmc.api.ModInitializer
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents
 import org.slf4j.LoggerFactory
 
 object NaturalHungering : ModInitializer {
@@ -9,8 +10,9 @@ object NaturalHungering : ModInitializer {
     private val _logger_ = LoggerFactory.getLogger(modID_);
     fun print(string: String): Unit = _logger_.info(string);
 
-    val exhaustionDivider_: Float = 100f;
-    val passiveExhaustion_: Float = .001f;
-
-	override fun onInitialize() {}
+	override fun onInitialize() {
+        ServerLifecycleEvents.SERVER_STARTED.register { server ->
+            ModConfig.init();
+        }
+    }
 }
