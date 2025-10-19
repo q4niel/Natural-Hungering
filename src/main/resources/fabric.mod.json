@@ -2,28 +2,29 @@
 	"schemaVersion": 1,
 	"id": "natural_hungering",
 	"version": "${version}",
-	"name": "Natural-Hungering",
-	"description": "A Minecraft Fabric Mod: What the hunger bar should've been",
+	"name": "Natural Hungering",
+	"description": "What the hunger bar should've been",
 	"authors": [
 		"q4niel"
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/natural-hungering",
-		"sources": "https://github.com/q4niel/Natural-Hungering"
+		"sources": "https://github.com/q4niel/Natural-Hungering",
+        "issues": "https://github.com/q4niel/Natural-Hungering/issues"
 	},
-	"license": "Natural Hungering License 1.0",
+	"license": "Natural Hungering License",
 	"icon": "assets/natural_hungering/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			{
-				"value": "dev.q4niel.natural_hungering.NaturalHungering",
+				"value": "dev.q4niel.NaturalHungering",
 				"adapter": "kotlin"
 			}
 		],
 		"fabric-datagen": [
 			{
-				"value": "dev.q4niel.natural_hungering.NaturalHungeringDataGenerator",
+				"value": "dev.q4niel.NaturalHungeringDataGenerator",
 				"adapter": "kotlin"
 			}
 		]
@@ -32,8 +33,8 @@
 		"natural_hungering.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.13",
-		"minecraft": "~1.21.5",
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
 		"java": ">=21",
 		"fabric-api": "*",
 		"fabric-language-kotlin": "*"
