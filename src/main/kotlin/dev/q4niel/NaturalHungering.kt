@@ -9,5 +9,8 @@ object NaturalHungering : ModInitializer {
     private val _logger_ = LoggerFactory.getLogger(modID_);
     fun print(string: String): Unit = _logger_.info(string);
 
+    val exhaustionDivider_: Float = 100f;
+    val passiveExhaustion_: Float = .001f;
+
 	override fun onInitialize() {}
 }
